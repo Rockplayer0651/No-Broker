@@ -98,108 +98,263 @@
     </div>
     <hr>
 
-    <div class="container text-center mt-4">
+    <div class="container-fluid ">
         <div class="row">
-            <div class="col-4">
-                <div class="card shadow-sm">
-                    <div class="card-body">
-                        <div class="container text-center">
-                            <div class="row row-cols">
 
-                                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                                    <button type="button" class="btn btn-outline-secondary ">Filters</button>
-                                    <button type="button" class="btn btn-outline-secondary btn-lg">Premium
-                                        Filters
-                                    </button>
-                                </div>
-                                <div class="filter-card">
-                                    <h6 class="float-start"><strong>BHK Type</strong></h6>
-                                    <div class="d-flex flex-wrap gap-3 mt-4">
-                                        <button class="btn active-btn bhk-btn">1 RK</button>
-                                        <button class="btn active-btn bhk-btn">1 BHK</button>
-                                        <button class="btn btn-light bhk-btn">2 BHK</button>
-                                        <button class="btn btn-light bhk-btn">3 BHK</button>
-                                        <button class="btn btn-light bhk-btn">4 BHK</button>
-                                        <button class="btn btn-light bhk-btn">4+ BHK</button>
-                                    </div><br>
-                                    <div class="float-start">
-                                        <h6><strong>Range: ₹ 13 k to ₹ 85 k</strong></h6>
-                                    </div><br>
 
-                                    <input type="range" class="form-range" min="0" max="500000" step="0.5" id="range3">
+            <div class="col-lg-3">
 
-                                    <div class="mt-5">
-                                        <div class="float-start">
-                                            <h6><strong>Properties within next 2 days</strong></h6>
-                                        </div><br>
-                                        <div class="form-check mt-3">
-                                            <input class="form-check-input" type="checkbox">
-                                            <label class="form-check-label">
-                                                Show properties where owner is hosting a visit
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <h6 class=""><strong>Availability</strond>
-                                    </h6>
-                                    <div class="row availability mb-4">
-                                        <div class="col-md-6">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="availability">
-                                                <label class="form-check-label">Immediate</label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="availability">
-                                                <label class="form-check-label">Within 30 Days</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="availability">
-                                                <label class="form-check-label">Within 15 Days</label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="availability">
-                                                <label class="form-check-label">After 30 Days</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h6 class="section-title"><strong>Tenants</strong></h6>
-                                    <div class="row tenants mb-5">
-                                        <div class="col-md-6">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox">
-                                                <label class="form-check-label">Family</label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox">
-                                                <label class="form-check-label">Bachelor Male</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox">
-                                                <label class="form-check-label">Company</label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox">
-                                                <label class="form-check-label">Bachelor Female</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h6 class="section-title"><strong>Type</strong></h6>
+
+                <!-- //Table -->
+                <section>
+
+                    <div class="flex card shadow-sm border-0">
+
+                        <div class="card-body filter-scroll">
+
+                            <div class="btn-group w-100 mb-4">
+                                <button class="btn btn-outline-secondary active">
+                                    Filters
+                                </button>
+                                <button class="btn btn-outline-secondary">
+                                    Premium Filters
+                                </button>
+                            </div>
+
+                            <h6 class="fw-bold mb-3">BHK Type</h6>
+
+                            <div class="row g-2 mb-4">
+                                <div class="col-4"><button class="btn btn-light w-100">1 RK</button></div>
+                                <div class="col-4"><button class="btn btn-light w-100">1 BHK</button></div>
+                                <div class="col-4"><button class="btn btn-light w-100">2 BHK</button></div>
+                                <div class="col-4"><button class="btn btn-light w-100">3 BHK</button></div>
+                                <div class="col-4"><button class="btn btn-light w-100">4 BHK</button></div>
+                                <div class="col-4"><button class="btn btn-light w-100">4+ BHK</button></div>
+                            </div>
+
+                            <h6 class="fw-bold">Range: ₹13k - ₹85k</h6>
+
+                            <input type="range" class="form-range mb-4" min="0" max="100">
+
+                            <h6 class="fw-bold mb-3">
+                                Properties within next 2 days
+                            </h6>
+
+                            <div class="form-check mb-4">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label">
+                                    Show properties where owner is hosting a visit
+                                </label>
+                            </div>
+
+                            <h6 class="fw-bold mb-3">Availability</h6>
+
+                            <div class="row mb-4">
+                                <div class="col-12 col-md-6">
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox">
-                                        <label class="form-check-label">Gated Societies</label>
+                                        <input class="form-check-input" type="radio" name="availability">
+                                        <label class="form-check-label">Immediate</label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="availability">
+                                        <label class="form-check-label">Within 30 Days</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-md-6 mt-2 mt-md-0">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="availability">
+                                        <label class="form-check-label">Within 15 Days</label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="availability">
+                                        <label class="form-check-label">After 30 Days</label>
                                     </div>
                                 </div>
                             </div>
+
+                            <h6 class="fw-bold mb-3">Tenants</h6>
+
+                            <div class="row mb-4">
+                                <div class="col-12 col-md-6">
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label">Family</label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label">Bachelor Male</label>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-12 col-md-6 mt-2 mt-md-0">
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label">Company</label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label">Bachelor Female</label>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <h6 class="fw-bold mb-3">Type</h6>
+
+                            <div class="form-check mb-4">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label">
+                                    Gated Societies
+                                </label>
+                            </div>
+
+                            <h6 class="fw-bold mb-3">Amenities</h6>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label">Lift</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label">Parking</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label">Gym</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label">Power Backup</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label">Swimming Pool</label>
+                            </div>
+
                         </div>
                     </div>
-                </div>
+
+                </section>
+
             </div>
-            
+
+
+
+
+            <section class="flex justify-content-center col-lg-7">
+                <div class="container col-lg-7" style="width:100%;">
+
+                    <div class="card border shadow-sm mb-3" style="width: auto;">
+                        <div class="card-body">
+                            <p>Home /Flats for Rent in delhi/ Flats for Rent</p>
+
+
+                            <div class="dropdown">
+                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown link
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+
+
+
+
+
+
+                        </div>
+
+                        <h6>Flats, Apartments for Rent in Greater Kailash II, Delhi | Rental Properties in Greater</h6>
+
+
+
+                    </div>
+
+
+
+                </div>
+
+            </section>
+
+
+            <!--quick-links -->
+
+            <div class=" col-lg-2 ">
+
+                <div class="card border-0 shadow-sm mb-3">
+                    <div class="card-body">
+
+                        <h4 class="text-danger mb-3">Quick links</h4>
+
+                        <hr>
+
+                        <h6 class="fw-normal mb-3">
+                            People also searched for
+                        </h6>
+
+                        <ul class="ps-3 quick-links">
+                            <li><a href="#">Flats in Lajpat Nagar for rent</a></li>
+                            <li><a href="#">Flats in Chirag Dilli for rent</a></li>
+                            <li><a href="#">Flats in East of Kailash for rent</a></li>
+                            <li><a href="#">Flats in Soami Nagar for rent</a></li>
+                            <li><a href="#">Flats in Sadiq Nagar for rent</a></li>
+                            <li><a href="#">Flats in East Of Kailash for rent</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+
+
+
         </div>
+
+
+
+
+
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
